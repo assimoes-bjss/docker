@@ -17,7 +17,7 @@ for url in "${urls[@]}"; do
   wget -P "$download_dir" "$url"
 done
 
-sudo yum install  ./"$download_dir"/*.rpm -y
+sudo yum install  "$download_dir"/*.rpm -y
 
 
 echo "install complete"
